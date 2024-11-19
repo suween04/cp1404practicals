@@ -1,0 +1,19 @@
+BoxLayout:
+    orientation: 'horizontal'
+
+    TextInput:
+        id: input_number
+        text: ''
+        multiline: False
+
+    Button:
+        text: 'Square'
+        on_press: app.handle_calculate(input_number.text)
+
+    Label:
+        text: 'Result will appear here'
+        color: (1, 0, 1, 1)  # Pink color
+        id: output_label
+
+    Label:
+        text: 'Enter a number and press "Square"'
